@@ -1,6 +1,4 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { InfrastructureModule } from './infrastructure/infrastructure.module';
 import { DomainModule } from './domain/domain.module';
 import { ApplicationModule } from './application/application.module';
@@ -38,7 +36,7 @@ import { SupplierEntity } from './infrastructure/persistence/entities/supplier.e
     CategoryModule,
     SupplierModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
